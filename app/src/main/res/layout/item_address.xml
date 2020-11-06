@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:background="@color/bg_activity">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_marginRight="50dp"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:id="@+id/nameTxt"
+                     android:textSize="13sp"
+                     android:gravity="left|center"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+                 <TextView
+                     android:id="@+id/phoneTxt"
+                     android:textSize="13sp"
+                     android:gravity="left|center"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+             </LinearLayout>
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_weight="1"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+                 <TextView
+                     android:id="@+id/addressTxt"
+                     android:textSize="13sp"
+                     android:gravity="left|center"
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+             </LinearLayout>
+         </LinearLayout>
+
+         <ImageView
+             android:id="@+id/img"
+             android:src="@drawable/ic_checked"
+             android:layout_marginRight="10dp"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:layout_width="20dp"
+             android:layout_height="20dp" />
+     </RelativeLayout>
+
+</RelativeLayout>

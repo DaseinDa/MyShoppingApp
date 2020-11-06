@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="630dip"
+    android:orientation="vertical"
+    android:background="@color/bg_activity">
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:id="@+id/goodsInfoLayout"
+        android:layout_below="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/goodsImg"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:alpha="0.5"
+            android:background="@color/defaultTextColor"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <EditText
+                android:paddingLeft="10dp"
+                android:textSize="13sp"
+                android:id="@+id/goodsNameTxt"
+                android:textColorHint="@color/red"
+                android:hint="请输入商品名字"
+                android:textColor="@color/red"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <EditText
+                android:textSize="13sp"
+                android:numeric="integer"
+                android:id="@+id/goodsPriTxt"
+                android:textColorHint="@color/red"
+                android:hint="请输入商品价格"
+                android:textColor="@color/red"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/defaultTextColor"
+        android:layout_below="@+id/goodsInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/conEdt"
+            android:maxLength="60"
+            android:maxLines="2"
+            android:textSize="13sp"
+            android:hint="请输入商品描述"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

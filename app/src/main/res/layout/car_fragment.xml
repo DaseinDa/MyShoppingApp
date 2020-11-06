@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_activity"
+    android:orientation="vertical" >
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_marginBottom="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_gravity="bottom"
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/checkall_btn"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_space"
+            android:background="@drawable/shuaxing"
+            android:layout_alignParentLeft="true"
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_space"
+            android:layout_toRightOf="@id/checkall_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalfee_txtv"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="2.5"
+                android:gravity="left|center_vertical"
+                android:text="合计: ¥999.0"
+                style="@style/textStyle.Medium.white"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/cutfee_txtv"
+                android:layout_width="match_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.5"
+                android:gravity="left|top"
+                android:text="节省: ¥999.0"
+                android:textSize="@dimen/textSizeSmall"
+                style="@style/textStyle.Small.white"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/buy_btn"
+            android:layout_width="120dip"
+            android:layout_height="match_parent"
+            android:text="@string/product_buy_now"
+            android:textColor="@color/white"
+            android:background="@drawable/button_selector"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="630dip"
+    android:orientation="vertical"
+    android:background="@color/bg_activity">
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:id="@+id/goodsInfoLayout"
+        android:layout_below="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/goodsImg"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/headImg"
+            android:scaleType="fitXY"
+            android:src="@drawable/person_default_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+            <EditText
+                android:layout_toRightOf="@+id/headImg"
+                android:layout_alignParentBottom="true"
+                android:paddingLeft="10dp"
+                android:textSize="13sp"
+                android:id="@+id/goodsNameTxt"
+                android:textColorHint="@color/red"
+                android:hint="请输入商家名字"
+                android:textColor="@color/red"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/defaultTextColor"
+        android:layout_below="@+id/goodsInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/conEdt"
+            android:maxLength="60"
+            android:maxLines="2"
+            android:textSize="13sp"
+            android:hint="请输入商家描述"
+            android:background="@color/white"
+            android:layout_margin="0.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

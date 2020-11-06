@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_activity">
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_title"/>
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_below="@+id/titleLayout"
+         android:id="@+id/listview"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <GridView
+             android:numColumns="2"
+             android:id="@+id/gradview"
+             android:layout_width="match_parent"
+             android:layout_height="200dp"></GridView>
+         <include layout="@layout/separator_line_margin_slice"/>
+         <LinearLayout
+             android:padding="10dp"
+             android:background="@color/white"
+             android:layout_width="match_parent"
+             android:layout_height="100dp">
+             <EditText
+                 android:id="@+id/conEdt"
+                 android:background="@color/white"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent" />
+
+         </LinearLayout>
+         <include layout="@layout/separator_line_margin_slice"/>
+     </LinearLayout>
+<ImageView
+    android:id="@+id/addImg"
+    android:src="@drawable/add_goods"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="myshoppingapp" />
+    <version value="34" />
+    <list>
+        <mapping class="com.my.shopping.app.beans.UserBean"></mapping>
+        <mapping class="com.my.shopping.app.beans.HomeBean"></mapping>
+        <mapping class="com.my.shopping.app.beans.GoodsInfo"></mapping>
+        <mapping class="com.my.shopping.app.beans.BusinessInfo"></mapping>
+        <mapping class="com.my.shopping.app.beans.CarInfo"></mapping>
+        <mapping class="com.my.shopping.app.beans.OrderInfo"></mapping>
+        <mapping class="com.my.shopping.app.beans.OrderDetailInfo"></mapping>
+        <mapping class="com.my.shopping.app.beans.CommentBeans"></mapping>
+        <mapping class="com.my.shopping.app.beans.Address"></mapping>
+        <mapping class="com.my.shopping.app.beans.ShareBean"></mapping>
+    </list>
+</litepal>

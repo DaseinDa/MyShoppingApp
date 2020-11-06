@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_activity">
+    <include
+        android:id="@+id/titleLayout"
+        layout="@layout/layout_title"/>
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_below="@+id/titleLayout"
+         android:id="@+id/listview"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <com.amap.api.maps.MapView
+             android:id="@+id/trajectoryMap"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"  >
+         </com.amap.api.maps.MapView>
+     </LinearLayout>
+</RelativeLayout>

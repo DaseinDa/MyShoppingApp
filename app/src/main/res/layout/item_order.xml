@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_activity">
+
+    <RelativeLayout
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/goodsInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+         <TextView
+             android:id="@+id/orderTxt"
+             android:gravity="center|left"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
+        <TextView
+            android:text="查看详情"
+            android:layout_alignParentRight="true"
+            android:id="@+id/moreTxt"
+            android:gravity="center|left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:paddingLeft="10dp"
+        android:id="@+id/addressTxt"
+        android:layout_below="@+id/goodsInfoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/addressTxt"
+        android:background="@color/black_btn_stroke_color_disable"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp" />
+
+
+</RelativeLayout>

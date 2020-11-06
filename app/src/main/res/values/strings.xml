@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyShoppingApp</string>
+    <string name="tab_item_home">商城</string>
+    <string name="tab_item_category">店铺</string>
+    <string name="tab_item_bus">商家</string>
+    <string name="tab_item_shopcart">购物车</string>
+    <string name="tab_item_mine">我的</string>
+    <string name="text_item_category">分类</string>
+    <string name="text_item_shopcatd">购物车</string>
+    <string name="text_item_order">订单</string>
+    <string name="text_item_coupon">优惠券</string>
+    <string name="person_goods_collect">其他</string>
+    <!-- 我的 -->
+    <string name="person_nickname">点击此处登录</string>
+    <string name="person_mine_order">我的订单</string>
+    <string name="person_all_order">查看订单</string>
+    <string name="person_order_waitpay">待付款</string>
+    <string name="person_order_waitreceive">待收货</string>
+    <string name="person_order_waitcomment">待评价</string>
+    <string name="person_order_returned">退/换货</string>
+    <string name="person_order_canceled">已取消</string>
+    <string name="person_receive_address">收货地址</string>
+    <string name="person_user_info">个人资料</string>
+    <string name="person_integrate_detail">积分明细</string>
+    <string name="person_coupon">优惠券</string>
+    <string name="product_buy_now">立即购买</string>
+</resources>
