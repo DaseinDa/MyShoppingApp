@@ -3,6 +3,6 @@ This is an Online Shop App based on Android Development Platform. The project is
 ## How to compile and use
 Download the Android Studio:
 
-'''https://developer.android.com/studio?hl=zh-cn'''
+https://developer.android.com/studio?hl=zh-cn
 
 Import the project, compile the project and run
